@@ -24,7 +24,7 @@ app.post('/gift', (req, res) => {
   
 
   if ((verifyProof(proof, body, MERKLE_ROOT))) {
-    res.send("You got a toy robot!");
+    res.send("Here's your Gift");
   } else {
     res.send("You have no Gift");
   }
